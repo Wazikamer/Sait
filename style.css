@@ -25,6 +25,7 @@ body {
   border-radius: 0px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .logo_img {
@@ -108,9 +109,15 @@ span {
   margin: 35px 0;
 }
 
+.container_full {
+  width: 100%;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -151,10 +158,8 @@ span {
   flex: 1 1 auto;
 }
 
-.container_full {
-  width: 100%;
+.container_center {
   display: flex;
-  justify-content: center;
 }
 
 .card {
@@ -363,30 +368,34 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 290px;
+  height: 380px;
   margin-right: 20px;
 }
 .card-2a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 290px;
+  height: 380px;
 }
 
 .card-2__inner {
   padding: 33px 40px 0;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1 1 0;
 }
 
 .number_yell-2 {
   position: absolute;
-  top: 140px;
+  top: 169px;
   left: 106px;
 }
 .number_blue-2 {
   position: absolute;
-  top: 100px;
-  left: 130px;
+  top: 129px;
+  left: 155px;
 }
 .title {
   font-family: "Open Sans";
@@ -428,6 +437,16 @@ span {
   background: #5f80f5;
 }
 
+.number_yell-3 {
+  position: absolute;
+  top: 117px;
+  left: 107px;
+}
+.number_blue-3 {
+  position: absolute;
+  top: 145px;
+  left: 156px;
+}
 .you-2 {
   display: flex;
 }
@@ -460,12 +479,12 @@ span {
   position: absolute;
   top: 36px;
 }
-.number_blue {
+.number_blue-5 {
   position: absolute;
   left: 50px;
   bottom: 116px;
 }
-.number_green {
+.number_green-5 {
   position: absolute;
   left: 100px;
   bottom: 135px;
@@ -574,6 +593,19 @@ span {
   .card-2a {
     width: 340px;
   }
+
+  .number_blue-2 {
+    left: 180px;
+  }
+  .number_yell-2 {
+    left: 130px;
+  }
+  .number_yell-3 {
+    left: 131px;
+  }
+  .number_blue-3 {
+    left: 180px;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -593,16 +625,29 @@ span {
     padding-right: 135px;
     padding-left: 135px;
   }
+  .number_blue-2 {
+    left: 191px;
+  }
+  .number_yell-2 {
+    left: 141px;
+  }
+  .number_yell-3 {
+    left: 141px;
+  }
+  .number_blue-3 {
+    left: 191px;
+  }
 }
 
 @media screen and (max-width: 1000px), (max-height: 912px) {
-  .container_full {
+  .container_center {
     flex-direction: column;
     align-items: center;
   }
 
   .card_left {
     margin-bottom: 50px;
+    margin-right: 0;
   }
 
   .wrapper {
@@ -686,5 +731,17 @@ span {
   }
   .pos {
     margin-bottom: 10px;
+  }
+  .number_blue-2 {
+    left: 238px;
+  }
+  .number_yell-2 {
+    left: 188px;
+  }
+  .number_yell-3 {
+    left: 191px;
+  }
+  .number_blue-3 {
+    left: 240px;
   }
 }
