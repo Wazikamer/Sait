@@ -172,7 +172,7 @@ span {
 
 .card_left {
   min-height: 453px;
-  max-width: 520px;
+  max-width: 598px;
   padding: 31px 40px 40px;
   margin-right: 30px;
 }
@@ -689,6 +689,10 @@ span {
 @media screen and (max-width: 650px) {
   .container_full {
     width: 100%;
+  }
+
+  .card_left {
+    max-width: 455px;
   }
 
   .card-1 {
