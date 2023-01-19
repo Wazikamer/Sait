@@ -15,3 +15,9 @@ console.log("Vibnimannja: " + (str_1 + str_2));
 console.log("Math: " + Math.PI);
 console.log("Math: " + Math.E);
 console.log("Math: " + Math.max(4, 5, 6, -1, 8));
+
+var number = "15";
+
+if (number != 15) {
+  console.log("Ok");
+}
