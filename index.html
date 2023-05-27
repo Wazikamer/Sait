@@ -4,236 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Бімба</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="nav">
-        <div class="logo_img">
-          <img src="img/logo.png" alt="1" />
-        </div>
-        <div class="nav__inner">
-          <div class="top__nav">
-            <div class="item">
-              <a href="#"
-                ><img src="img/1btn.png" alt="1" />
-                <span>Account & settings</span></a
-              >
+      <div class="wrapper__top">
+        <div class="container">
+          <div class="d-flex">
+            <div class="leftBar">
+              <div class="field"></div>
             </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/2btn.png" alt="1" />
-                <span>My stats</span>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/3btn.png" alt="1" />
-                <span>My dealss</span>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/4btn.png" alt="1" />
-                <span>My insights</span>
-              </a>
-            </div>
-          </div>
-          <div class="bottom__nav">
-            <div class="item">
-              <a href="#"
-                ><img src="img/supportbtn.png" alt="1" />
-                <span>Support</span></a
-              >
-            </div>
-            <div class="item">
-              <a href="#"
-                ><img src="img/centrerbtn.png" alt="1" />
-                <span>Learning center</span></a
-              >
-            </div>
-            <div class="item">
-              <a href="#"
-                ><img src="img/powerbtn.png" alt="1" />
-                <span>Powered by Substrata</span></a
-              >
+            <div class="rightBar">
+              <div class="description">
+                <h4>Ця гра є:</h4>
+                <p>
+                  П'ятнашки (п'ятнадцять) — популярна головоломка, придумана у
+                  1878 році Ноєм Чепменом. Складається з 15 однакових квадратних
+                  пластинок з нанесеними числами від 1 до 15.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="main">
-        <div class="container_full">
-          <div class="container">
-            <div class="container_part">
+      <div class="wrapper__center">
+        <div class="container">
+          <div class="d-flex flex-column">
+            <div class="leftSide">
+              <div class="block">
+                <h3>Sing up</h3>
+                <div class="inputs">
+                  <label for="text">Your name is?</label>
+                  <input type="text" id="text" />
+                  <label for="password">give me some numbers...</label>
+                  <input type="password" id="password" />
+                  <label for="email">Your email</label>
+                  <input type="email" id="email" />
+                  <label for="checkbox" id="checkbox"
+                    >Do you want to get information of changing code?</label
+                  >
+                  <input type="checkbox" />
+                </div>
+                <button id="singUp">Sing me!</button>
+                <div id="comments"></div>
+              </div>
+            </div>
+            <div class="rightSide">
+              <h3 class="cityName"></h3>
+              <div class="cityTemp"></div>
+              <div class="cityState"></div>
+              <div class="weatherIcon"></div>
+            </div>
+            <div class="d-flex flex-column">
               <div class="header">
-                <div class="header__inner">
-                  <div class="person">
-                    <div class="person_img">
-                      <img src="img/Mask Group.png" alt="" />
-                    </div>
-                    <div class="person_h4">
-                      <h4>Eran Yessodi</h4>
-                    </div>
-                  </div>
-                  <div class="ring">
-                    <img src="img/ring2.png" alt="" />
-                  </div>
-                </div>
+                <div class="rateUDS"></div>
+                <div class="rateEUR"></div>
               </div>
-              <div class="center">
-                <div class="container_center">
-                  <div class="center_left">
-                    <div class="card_left card">
-                      <h3>Summary</h3>
-                      <div class="ul">
-                        <ul>
-                          <li>
-                            Your deals take longer to close than team average
-                            for closed-won deals
-                          </li>
-                          <li>
-                            Well done! You’re closing bigger deals than the
-                            team’s average closed-won.
-                          </li>
-                          <li>
-                            You might be engaging too frequently. This may
-                            signal neediness go to “Learning Center” for help.
-                          </li>
-                          <li>
-                            You’re not optimizing vocal authority. You can
-                            improve this. Go to “Learning Center” to learn more.
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="card_footer">
-                        <div class="card_button">
-                          <a class="bebra" href="main.html"
-                            >Go to Learning Center</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="center_right">
-                    <div class="card-1 card">
-                      <div class="card-1__inner">
-                        <div class="box">
-                          <h3>All deals lifecycle vs team avg</h3>
-                          <p>by weeks</p>
-                          <div class="grafic">
-                            <img src="img/grafic.png" alt="" />
-                          </div>
-                        </div>
-                        <div class="box">
-                          <h3>Avg contract value vs team avg</h3>
-                          <p>in USD</p>
-                          <h5 class="number_yell">12 093</h5>
-                          <h5 class="number_blue">9 157</h5>
-                          <div class="pos">
-                            <div class="yellow"></div>
-                            <div class="blue"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card_bottom">
-                        <div class="width">
-                          <div class="you">
-                            <img src="img/yellow.png" alt="." />
-                            <p>You</p>
-                          </div>
-                          <div class="team">
-                            <img src="img/blue.png" alt="." />
-                            <p>team</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-duo">
-                      <div class="card-2 card">
-                        <div class="card-2__inner">
-                          <div class="title">
-                            <h3>Total avg engagement ratio vs team avg</h3>
-                          </div>
-                          <h5 class="number_yell-2">1.25</h5>
-                          <h5 class="number_blue-2">1.48</h5>
-                          <div class="pos-2">
-                            <div class="yellow-2"></div>
-                            <div class="blue-2"></div>
-                          </div>
-                        </div>
-                        <div class="card_bottom">
-                          <div class="width-2">
-                            <div class="you-2">
-                              <img src="img/yellow.png" alt="." />
-                              <p>You / prospects</p>
-                            </div>
-                            <div class="team-2">
-                              <img src="img/blue.png" alt="." />
-                              <p>team / prospects</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-2a card">
-                        <div class="card-2__inner">
-                          <div class="title">
-                            <h3>Avg alerts per deal vs team avg</h3>
-                          </div>
-                          <h5 class="number_yell-3">23.1</h5>
-                          <h5 class="number_blue-3">18.9</h5>
-                          <div class="pos-2">
-                            <div class="yellow-3"></div>
-                            <div class="blue-3"></div>
-                          </div>
-                        </div>
-                        <div class="card_bottom">
-                          <div class="width-2">
-                            <div class="you-2">
-                              <img src="img/yellow.png" alt="." />
-                              <p>You</p>
-                            </div>
-                            <div class="team-2">
-                              <img src="img/blue.png" alt="." />
-                              <p>team</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-5 card">
-                      <h3>Avg vocal dominance status vs top closers avg</h3>
-                      <div class="card-5__inner">
-                        <div class="inner__table">
-                          <h5 class="number">3.1</h5>
-                          <h5 class="number_blue-5">3.8</h5>
-                          <h5 class="number_green-5">4.5</h5>
-                          <div class="card-5__yellow"></div>
-                          <div class="card-5__blue"></div>
-                          <div class="card-5__green"></div>
-                        </div>
-                        <div class="inner__select">
-                          <div class="select__yellow">
-                            <img src="img/yellow.png" alt="." />
-                            <p>you</p>
-                          </div>
-                          <div class="select__blue">
-                            <img src="img/blue.png" alt="." />
-                            <p>Prospect</p>
-                          </div>
-                          <div class="select__green">
-                            <img src="img/green.png" alt="." />
-                            <p>Top sellers</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="calu">
+                <div class="test">
+                  <input type="number" class="oneInput" name="one" />
+                  <select name="one" id="one">
+                    <option selected>UAN</option>
+                    <option>USD</option>
+                    <option>EUR</option>
+                  </select>
                 </div>
-              </div>
-              <div class="footer">
-                <div class="footer__inner">
-                  <div class="footer_item">Deal insights</div>
+                <div class="test-2">
+                  <input type="number" class="twoInput" name="two" />
+                  <select name="two" id="two">
+                    <option>UAN</option>
+                    <option selected>USD</option>
+                    <option>EUR</option>
+                  </select>
+                  <button class="submit btn btn-info">Solve it!</button>
                 </div>
               </div>
             </div>
@@ -241,5 +96,7 @@
         </div>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
